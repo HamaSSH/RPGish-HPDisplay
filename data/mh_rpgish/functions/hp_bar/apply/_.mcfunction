@@ -10,4 +10,3 @@
     data modify entity @s CustomNameVisible set value 1b
 # 表示時間
     data modify entity @s PortalCooldown set value 100
-    tag @s add InCombat

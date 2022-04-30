@@ -1,4 +1,4 @@
-# オオカミだけ対象外
+# オオカミだけバグる(違う実装するかなぁ)
 # モブHPデータの取得
     execute store result score $Health Temporary run data get entity @s Health
 # ダメージを受けた場合
