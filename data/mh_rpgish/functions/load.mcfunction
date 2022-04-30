@@ -3,7 +3,6 @@ say reload
     scoreboard objectives add mh.hp dummy
     scoreboard objectives add mh.hp_max dummy
     scoreboard objectives add mh.hp_ratio dummy
-    scoreboard objectives add mh.PreviousHP dummy
 
     scoreboard objectives add Temporary dummy
     scoreboard objectives add Constant dummy

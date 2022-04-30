@@ -3,7 +3,6 @@
     scoreboard players remove $Damage Temporary 512
 # ダメージ分のスコア減算
     scoreboard players operation @s mh.hp += $Damage Temporary
-    scoreboard players operation @s mh.PreviousHP = @s mh.hp
 # Healthを元に戻す
     data modify entity @s Health set value 512.0f
 # HP表示
