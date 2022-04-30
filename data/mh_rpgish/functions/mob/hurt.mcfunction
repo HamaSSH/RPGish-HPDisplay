@@ -9,5 +9,7 @@
     function mh_rpgish:hp_bar/apply/_
 # ダメージ表示
     function mh_rpgish:dmg_indicator/_
+# 毒エフェクトかつmh.hp=1の時の処理...。
+    
 # mh.hp<0で死亡処理
     execute if score @s mh.hp matches ..0 run kill @s
