@@ -5,5 +5,9 @@
     scoreboard players operation @s mh.hp += $Heal Temporary
     execute if score @s mh.hp >= @s mh.hp_max run scoreboard players operation @s mh.hp = @s mh.hp_max
     scoreboard players operation @s mh.PreviousHP = @s mh.hp
+# HP表示
+    function mh_rpgish:hp_bar/apply/_
+# ダメージ(回復値)表示
+    function mh_rpgish:dmg_indicator/_
 # Healthを元に戻す
     data modify entity @s Health set value 512.0f

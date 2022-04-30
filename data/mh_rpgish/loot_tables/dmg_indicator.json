@@ -1,0 +1,70 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:barrier",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_name",
+                            "entity": "this",
+                            "name": {
+                                "score": {
+                                    "name": "$Health",
+                                    "objective": "Temporary"
+                                }
+                            },
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:value_check",
+                                    "value": {
+                                        "type": "minecraft:score",
+                                        "target": {
+                                            "type": "minecraft:fixed",
+                                            "name": "$Health"
+                                        },
+                                        "score": "Temporary"
+                                    },
+                                    "range": {
+                                        "max": -1
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "function": "minecraft:set_name",
+                            "entity": "this",
+                            "name": [
+                                {
+                                    "score": {
+                                        "name": "$Health",
+                                        "objective": "Temporary"
+                                    },
+                                    "color": "green"
+                                }
+                            ],
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:value_check",
+                                    "value": {
+                                        "type": "minecraft:score",
+                                        "target": {
+                                            "type": "minecraft:fixed",
+                                            "name": "$Health"
+                                        },
+                                        "score": "Temporary"
+                                    },
+                                    "range": {
+                                        "min": 1
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

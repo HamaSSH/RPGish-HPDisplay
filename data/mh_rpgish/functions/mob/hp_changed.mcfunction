@@ -4,3 +4,5 @@
     execute if score $Health Temporary matches ..511 run function mh_rpgish:mob/hurt
 # HPを回復した場合
     execute if score $Health Temporary matches 513.. run function mh_rpgish:mob/heal
+# リセット
+    scoreboard players reset $Health
