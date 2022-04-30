@@ -2,8 +2,5 @@
 
 # モブ召喚時に初期処理
     execute if entity @s[tag=!Init] run function mh_rpgish:mob/init
-# HPが最大でない時では回復によるHP変化も検知したいため、最大時とそうでない場合で処理を分ける
-    # HPMAXの場合(HurtTimeの検知)
-        execute if data entity @s {HurtTime:9s} run function mh_rpgish:mob/hurt
-    # HPMAXでない場合
-        # execute unless score @s mh.hp = @s mh.hp_max run function mh_rpgish:mob/hp_changed
+# HPが変更された時の検知
+    execute unless data entity @s {Health:512.0f} run function mh_rpgish:mob/hp_changed
